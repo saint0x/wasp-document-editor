@@ -41,14 +41,14 @@ psl=}
 route EditorRoute { path: "/editor/:documentId", to: EditorPage }
 page EditorPage {
   authRequired: true,
-  component: import Editor from "@src/client/EditorPage"
+  component: import Editor from "@src/client/components/EditorPage"
 
 }
 
 route UserProfileRoute { path: "/user/:userId", to: UserProfilePage }
 page UserProfilePage {
   authRequired: true,
-  component: import UserProfile from "@src/client/UserProfilePage"
+  component: import UserProfile from "@src/client/components/UserProfilePage"
 }
 
 
